@@ -1,11 +1,12 @@
 name: growdeck_playtime_plugin
 description: "Growdeck Flutter Plugin"
-version: 0.0.4
+version: 0.0.5
 homepage: "https://growdeck.io"
 
 environment:
-  sdk: ^3.8.1
+  sdk: '>=3.3.0 <4.0.0'
   flutter: '>=3.3.0'
+
 
 dependencies:
   flutter:
