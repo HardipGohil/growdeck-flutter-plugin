@@ -67,6 +67,8 @@ public class GrowdeckPlaytimePlugin implements FlutterPlugin, MethodCallHandler,
       } else if (activity != null && call.method.equals("show")) {
         GrowDeck.show(false, activity);
         result.success("Playtime Wall Shown");
+    } else if (activity != null && call.method.equals("isInitialized")) {
+      result.success(GrowDeck.isIsInitialized());
     } else {
       result.notImplemented();
     }

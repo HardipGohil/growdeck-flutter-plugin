@@ -36,7 +36,7 @@ android {
     }
 
     dependencies {
-        implementation("io.growdeck.sdk:playtime:1.0.12")
+        implementation("io.growdeck.sdk:playtime:1.0.14")
         testImplementation("junit:junit:4.13.2")
         testImplementation("org.mockito:mockito-core:5.0.0")
     }

@@ -15,6 +15,11 @@ class MethodChannelGrowdeckPlaytimePlugin extends GrowdeckPlaytimePluginPlatform
     return version;
   }
 
+  static Future<bool> isInitialized() async {
+    final result = await methodChannel.invokeMethod<bool>('isInitialized');
+    return result ?? false;
+  }
+
   static Future<void> initialize({
     required String appId,
     required String userId,
